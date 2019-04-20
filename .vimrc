@@ -6,6 +6,7 @@ syntax on
 
 runtime macros/matchit.vim
 
+" General settings
 set autoindent                 " Minimal automatic indenting for any filetype.
 set backspace=indent,eol,start " Proper backspace behavior.
 set hidden                     " Possibility to have more than one unsaved buffers.
@@ -15,6 +16,15 @@ set ruler                      " Shows the current line number at the bottom-rig
 set wildmenu                   " Great command-line completion, use `<Tab>` to move
                                " around and `<CR>` to validate.
 set relativenumber
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+" Code folding
+set foldmethod=indent
+set foldlevel=99
+nnoremap <space> za
 
 " Plugins
 set rtp+=~/.vim/bundle/Vundle.vim
