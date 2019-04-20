@@ -35,6 +35,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle'
 Plugin 'scrooloose/nerdtree'
+Plugin 'kalekundert/vim-coiled-snake'
 
 call vundle#end()            " required
 
