@@ -40,3 +40,14 @@ Plugin 'kalekundert/vim-coiled-snake'
 call vundle#end()            " required
 
 set hlsearch
+
+" Python specific
+" Add PEP8 compatible indentation
+au BufNewFile,BufRead *.py
+    \ set tabstop=4
+    \ set softtabstop=4
+    \ set shiftwidth=4
+    \ set textwidth=79
+    \ set expandtab
+    \ set autoindent
+    \ set fileformat=unix
